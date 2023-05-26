@@ -1,18 +1,19 @@
 package TestCases;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import base.BaseClass;
 import utility.Utilites;
 
-public class Register {
+public class Register extends BaseClass {
+	
+	
+	
 	
 	WebDriver driver;
 	
@@ -24,14 +25,11 @@ public class Register {
 	
 	@BeforeMethod
 	public void setUp() {
-		driver = new ChromeDriver();
 		
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://tutorialsninja.com/demo/");
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+		driver = initializeBrowserAndOpenApplicationURL("edge"); 
+		
 		driver.findElement(By.xpath("//span[text()='My Account']")).click();
-		driver.findElement(By.linkText("Register")).click();
+		driver.findElement(By.linkText("Register")).click(); 
 	}
 	
 	@Test(priority=1)
@@ -97,6 +95,7 @@ public class Register {
 	}
 	@Test(priority=4)
 	public void registeringAccountWithoutFillingAnyDetials() {
+		
 		
 		driver.findElement(By.id("input-firstname")).sendKeys("");
 		driver.findElement(By.id("input-lastname")).sendKeys("");

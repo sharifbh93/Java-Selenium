@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Sharif\AppData\Local\Temp\testng-eclipse-1433587848\testng-customsuite.xml</span>
+                    <span>C:\Users\Sharif\AppData\Local\Temp\testng-eclipse-1629351338\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestCases.Register" class="method navigator-link" hash-for-method="registeringAccountWithoutFillingAnyDetials">registeringAccountWithoutFillingAnyDetials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.Search" class="method navigator-link" hash-for-method="verifySearchingWithInValidProductName">verifySearchingWithInValidProductName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.Search" class="method navigator-link" hash-for-method="verifySearchingWithValidProductName">verifySearchingWithValidProductName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestCases.Search" class="method navigator-link" hash-for-method="verifySearchingWithoutProductName">verifySearchingWithoutProductName</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +131,28 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestCases.Register</span>
+              <span class="class-name">TestCases.Search</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="registeringAccountWithoutFillingAnyDetials">
-                  </a> <!-- registeringAccountWithoutFillingAnyDetials -->
-                  <span class="method-name">registeringAccountWithoutFillingAnyDetials</span>
+                  <a name="verifySearchingWithInValidProductName">
+                  </a> <!-- verifySearchingWithInValidProductName -->
+                  <span class="method-name">verifySearchingWithInValidProductName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchingWithValidProductName">
+                  </a> <!-- verifySearchingWithValidProductName -->
+                  <span class="method-name">verifySearchingWithValidProductName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchingWithoutProductName">
+                  </a> <!-- verifySearchingWithoutProductName -->
+                  <span class="method-name">verifySearchingWithoutProductName</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Sharif\AppData\Local\Temp\testng-eclipse-1433587848\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Sharif\AppData\Local\Temp\testng-eclipse-1629351338\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,11 +169,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestCases.Register&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;registeringAccountWithoutFillingAnyDetials&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- TestCases.Register --&gt;
+      &lt;class name=&quot;TestCases.Search&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -189,16 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'registeringAccountWithoutFillingAnyDetials')
-data.setCell(0, 2, 'TestCases.Register')
-data.setCell(0, 3, 739);
+data.setCell(0, 1, 'verifySearchingWithInValidProductName')
+data.setCell(0, 2, 'TestCases.Search')
+data.setCell(0, 3, 3275);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifySearchingWithValidProductName')
+data.setCell(1, 2, 'TestCases.Search')
+data.setCell(1, 3, 741);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifySearchingWithoutProductName')
+data.setCell(2, 2, 'TestCases.Search')
+data.setCell(2, 3, 570);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 739 ms</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -213,20 +241,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">3 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">TestCases.Register</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyingAccountWithExistingEmail</span>
-                <br/>
-                <span class="ignored-method-name">verifyRegisterAccountWithMandatoryFields</span>
-                <br/>
-                <span class="ignored-method-name">verifyRegisterAccountWithAllFields</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -235,18 +252,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestCases.Register</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestCases.Search</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">registeringAccountWithoutFillingAnyDetials</span>
-                <span class="method-start">14636 ms</span>
+                <span class="method-name">verifySearchingWithValidProductName</span>
+                <span class="method-start">24935 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">15380 ms</span>
+                <span class="method-name">TearDown</span>
+                <span class="method-start">25679 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">26771 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchingWithInValidProductName</span>
+                <span class="method-start">77044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">80322 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">81413 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchingWithoutProductName</span>
+                <span class="method-start">132631 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">133203 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
