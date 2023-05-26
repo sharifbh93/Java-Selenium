@@ -5,7 +5,9 @@
     <classes>
       <class name="TestCases.Register">
         <methods>
-          <include name="verifyRegisterAccountWithAllFields"/>
+          <include name="registeringAccountWithoutFillingAnyDetials"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- TestCases.Register -->
     </classes>
