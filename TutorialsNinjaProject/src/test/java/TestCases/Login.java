@@ -14,12 +14,16 @@ import utility.Utilites;
 
 public class Login extends BaseClass{
 	
+	public Login() {
+		super();
+	}
+	
 	WebDriver driver;
 	
 	@BeforeMethod
 	public void setup() {
 		
-		driver = initializeBrowserAndOpenApplicationURL("chrome");
+		driver = initializeBrowserAndOpenApplicationURL(prop.getProperty("browserName"));
 		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
